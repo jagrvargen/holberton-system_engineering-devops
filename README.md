@@ -21,3 +21,5 @@ Script 9: Deletes the directory 'holberton' from the /tmp directory.
 Script 10: Changes cwd to previous directory.
 
 Script 11: Lists all files, including hidden, in cwd, parent directory, and /boot directory.
+
+Script 12: Prints the type of the file 'iamafile' in the /tmp directory. 
