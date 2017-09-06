@@ -25,3 +25,5 @@ Script 11: Lists all files, including hidden, in cwd, parent directory, and /boo
 Script 12: Prints the type of the file 'iamafile' in the /tmp directory. 
 
 Script 13: Creates a symbolic link called to /bin/ls  __ls__
+
+Script 14: Copies all HTML files in cwd to parent of cwd, but only files that do not exist in parent or that are newer than existing in parent.
