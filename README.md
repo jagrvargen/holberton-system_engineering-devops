@@ -33,3 +33,5 @@ Script 15: Moves all files that begin with an uppercase letter to the directory 
 Script 16: Delete all files in cwd that end in ~
 
 Script 17: Create the directories welcome/ welcome/to and welcome/to/holberton without using multiple arguments
+
+Script 18: List all files in the cwd separated by commas. Directory names end with '/'. Files that begin with '.' are listed. The listings are alpha ordered except for '.' and '..' which come at the beginning. Only digits and letter are used to sort and digits come first.
