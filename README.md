@@ -6,4 +6,8 @@ Script 2: Brings the user back to the home directory.
 
 Script 3: Prints cwd contents in long format.
 
-Script 4: List cwd contents including hidden files in long format
+Script 4: List cwd contents including hidden files in long format.
+
+Script 5: List cwd contents numerically in long format.
+
+Script 6: Creates directory 'holberton' in /tmp directory.
