@@ -31,3 +31,5 @@ Script 14: Copies all HTML files in cwd to parent of cwd, but only files that do
 Script 15: Moves all files that begin with an uppercase letter to the directory /tmp/u
 
 Script 16: Delete all files in cwd that end in ~
+
+Script 17: Create the directories welcome/ welcome/to and welcome/to/holberton without using multiple arguments
