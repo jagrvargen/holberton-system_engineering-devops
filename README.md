@@ -27,3 +27,5 @@ Script 12: Prints the type of the file 'iamafile' in the /tmp directory.
 Script 13: Creates a symbolic link called to /bin/ls  __ls__
 
 Script 14: Copies all HTML files in cwd to parent of cwd, but only files that do not exist in parent or that are newer than existing in parent.
+
+Script 15: Moves all files that begin with an uppercase letter to the directory /tmp/u
