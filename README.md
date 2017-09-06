@@ -17,3 +17,5 @@ Script 7: Moves the file 'betty' from /tmp directory to /tmp/holberton directory
 Script 8: Deletes the file 'betty' from the /tmp/holberton directory.
 
 Script 9: Deletes the directory 'holberton' from the /tmp directory.
+
+Script 10: Changes cwd to previous directory.
