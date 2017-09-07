@@ -25,3 +25,5 @@ Script 11: Adds execute permission to all subdirectories of the current director
 Script 12: Creates a directory with permissions 751 in the current directory
 
 Script 13: Changes the group owner to holberton for the file 'hello'
+
+Script 14: Changes all owner to betty and the group owner to holberton for all files and directories in the working directory
