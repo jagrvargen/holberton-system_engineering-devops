@@ -13,3 +13,5 @@ Script 5: Adds execute permission to the owner of the file 'hello' in the workin
 Script 6: Adds execute permission to the owner and group owner and read permissions to others
 
 Script 7: Adds execution permission to the owner, group owner, and the other users to the file 'hello'
+
+Script 8: Sets permissions of file 'hello' to ______rwx
