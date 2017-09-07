@@ -17,3 +17,5 @@ Script 7: Adds execution permission to the owner, group owner, and the other use
 Script 8: Sets permissions of file 'hello' to ______rwx
 
 Script 9: Sets the mode of file 'hello' to rwxr_x_wx
+
+Script 10: Mirrors the permissions of the 'olleh' file to the 'hello' file
