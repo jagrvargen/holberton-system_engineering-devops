@@ -10,3 +10,4 @@ Script 4: Changes owner of the file 'hello' to betty
 
 Script 5: Adds execute permission to the owner of the file 'hello' in the working directory
 
+Script 6: Adds execute permission to the owner and group owner and read permissions to others
