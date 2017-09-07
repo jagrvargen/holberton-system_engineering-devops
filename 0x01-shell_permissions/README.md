@@ -32,3 +32,6 @@ Script 15: Changes the owner and group owner of the symbolic link file '_hello'
 to 'betty' and 'holberton' respectively
 
 Script 16: Changes the owner of the file hello to betty only of it is owned by the user guillaume
+
+
+Script 18: A man page for Holberton School
