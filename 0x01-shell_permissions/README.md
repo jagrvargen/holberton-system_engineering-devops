@@ -7,3 +7,6 @@ Script 2: Creates an empty file called 'hello'
 Script 3: Prints all the groups the current user belongs to
 
 Script 4: Changes owner of the file 'hello' to betty
+
+Script 5: Adds execute permission to the owner of the file 'hello' in the working directory
+
