@@ -23,3 +23,5 @@ Script 10: Mirrors the permissions of the 'olleh' file to the 'hello' file
 Script 11: Adds execute permission to all subdirectories of the current directory for the owner, the group owner, and all other users
 
 Script 12: Creates a directory with permissions 751 in the current directory
+
+Script 13: Changes the group owner to holberton for the file 'hello'
