@@ -15,3 +15,5 @@ Script 6. Third Line - Displays the third line of the file iacta.
 Script 7. CWD State - Writes the output of ls -la to the file ls_cwd_content. If the file does not already exist, it will be created.
 
 Script 8. File - Creates a file called \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:) which contains the text "Holberton School" followed by a newline.
+
+Script 9. Duplicate Last Line - Duplicates the last line of the file iacta.

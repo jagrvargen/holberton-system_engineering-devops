@@ -1,0 +1,2 @@
+#!/bin/bash
+cat iacta ; echo ; tail -n 1 iacta ; echo
