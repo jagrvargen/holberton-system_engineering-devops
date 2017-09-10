@@ -11,3 +11,5 @@ Script 4. Last Lines - Displays the last ten lines of the /etc/passwd file.
 Script 5. First Lines - Displays the first ten lines of the /etc/passwd file.
 
 Script 6. Third Line - Displays the third line of the file iacta.
+
+Script 7. CWD State - Writes the output of ls -la to the file ls_cwd_content. If the file does not already exist, it will be created.
