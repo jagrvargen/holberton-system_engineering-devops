@@ -29,3 +29,5 @@ Script 13. Unique - Takes a list of words as input and prints only words that ap
 Script 14. Find That Word - Displays lines containing the pattern "root" from the file /etc/passwd
 
 Script 15. Count That Word - Displays the number of lines that contain the pattern "bin" in the file /etc/passwd.
+
+Script 16. What's Next - Displays lines containing the pattern 'root' and the three lines after them.
