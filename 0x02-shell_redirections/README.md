@@ -37,3 +37,5 @@ Script 17. Hide This Word - Displays all the lines in the file /etc/passwd that 
 Script 18. Letter Only - Displays all lines of the file /etc/ssh/sshd_config that start with a letter.
 
 Script 19. AZ - Replaces all characters A and c from input to Z and e respectively.
+
+Script 20. Hiago - Removes all letters c and C from input.
