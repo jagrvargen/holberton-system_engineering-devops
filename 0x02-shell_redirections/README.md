@@ -41,3 +41,5 @@ Script 19. AZ - Replaces all characters A and c from input to Z and e respective
 Script 20. Hiago - Removes all letters c and C from input.
 
 Script 21. Reverse - Reverses its input.
+
+Script 22. Users and Homes - Displays all users and their home directories sorted by users.
