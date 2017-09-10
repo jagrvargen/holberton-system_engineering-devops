@@ -17,3 +17,5 @@ Script 7. CWD State - Writes the output of ls -la to the file ls_cwd_content. If
 Script 8. File - Creates a file called \*\\'"Holberton School"\'\\*$\?\*\*\*\*\*:) which contains the text "Holberton School" followed by a newline.
 
 Script 9. Duplicate Last Line - Duplicates the last line of the file iacta.
+
+Script 10. No More JS - Deletes all regular files, excluding directories, with a .js extension that are present in the cwd and all its subdirectories.
