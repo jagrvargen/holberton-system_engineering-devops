@@ -31,3 +31,5 @@ Script 14. Find That Word - Displays lines containing the pattern "root" from th
 Script 15. Count That Word - Displays the number of lines that contain the pattern "bin" in the file /etc/passwd.
 
 Script 16. What's Next - Displays lines containing the pattern 'root' and the three lines after them.
+
+Script 17. Hide This Word - Displays all the lines in the file /etc/passwd that do not contain the pattern 'bin'
