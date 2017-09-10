@@ -35,3 +35,5 @@ Script 16. What's Next - Displays lines containing the pattern 'root' and the th
 Script 17. Hide This Word - Displays all the lines in the file /etc/passwd that do not contain the pattern 'bin'
 
 Script 18. Letter Only - Displays all lines of the file /etc/ssh/sshd_config that start with a letter.
+
+Script 19. AZ - Replaces all characters A and c from input to Z and e respectively.
