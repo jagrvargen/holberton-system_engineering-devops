@@ -23,3 +23,5 @@ Script 10. No More JS - Deletes all regular files, excluding directories, with a
 Script 11. Directories - Counts the number of directories and sub-directories in the cwd.
 
 Script 12. Newest Files - Displays the 10 newest files in the cwd.
+
+Script 13. Unique - Takes a list of words as input and prints only words that appear exactly once.
