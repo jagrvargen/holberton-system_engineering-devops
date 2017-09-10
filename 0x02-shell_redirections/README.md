@@ -33,3 +33,5 @@ Script 15. Count That Word - Displays the number of lines that contain the patte
 Script 16. What's Next - Displays lines containing the pattern 'root' and the three lines after them.
 
 Script 17. Hide This Word - Displays all the lines in the file /etc/passwd that do not contain the pattern 'bin'
+
+Script 18. Letter Only - Displays all lines of the file /etc/ssh/sshd_config that start with a letter.
