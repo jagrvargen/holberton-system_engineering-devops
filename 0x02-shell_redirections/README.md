@@ -25,3 +25,5 @@ Script 11. Directories - Counts the number of directories and sub-directories in
 Script 12. Newest Files - Displays the 10 newest files in the cwd.
 
 Script 13. Unique - Takes a list of words as input and prints only words that appear exactly once.
+
+Script 14. Find That Word - Displays lines containing the pattern "root" from the file /etc/passwd
