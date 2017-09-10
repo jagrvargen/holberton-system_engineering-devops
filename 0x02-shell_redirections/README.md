@@ -5,3 +5,5 @@ Script 1. Confused Smiley - Displays a confused smiley face.
 Script 2. Hello File - Displays the content of the /etc/passwd file.
 
 Script 3. Two Files - Displays the content of the /etc/passwd and /etc/hosts files.
+
+Script 4. Last Lines - Displays the last ten lines of the /etc/passwd file.
