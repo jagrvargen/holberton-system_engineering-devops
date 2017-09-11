@@ -10,3 +10,5 @@ Script 4. Lists the environment variables.
 
 Script 5. Displats a list of all variables, including environment variables, and functions.
 
+Script 6. Creates the variable BETTY with the value Holberton.
+
