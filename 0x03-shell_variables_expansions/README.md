@@ -24,3 +24,5 @@ Script 11. Converts the variable BINARY from binary to decimal.
 
 Script 12. Prints all possible combinationas of two letters except oo.
 
+Script 13. Prints the variable NUM with two decimal places.
+
