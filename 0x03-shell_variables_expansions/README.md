@@ -14,3 +14,5 @@ Script 6. Creates the variable BETTY with the value Holberton.
 
 Script 7. Creates the global variable HOLBERTON with the value Betty.
 
+Script 8. Prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE
+
