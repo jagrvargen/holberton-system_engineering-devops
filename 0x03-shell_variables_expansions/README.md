@@ -18,3 +18,5 @@ Script 8. Prints the result of the addition of 128 with the value stored in the 
 
 Script 9. Prints the result of the environmental variable POWER divided by DIVIDE followed by a new line.
 
+Script 10. Displays the result of BREATH to the power of LOVE.
+
