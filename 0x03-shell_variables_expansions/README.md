@@ -4,3 +4,5 @@ Script 1. Hello You - Prints 'hello user', where user is the current active Linu
 
 Script 2. Path - Adds the /actiomn directory to the PATH.
 
+Script 3. Paths - Counts the number of directories in the PATH
+
