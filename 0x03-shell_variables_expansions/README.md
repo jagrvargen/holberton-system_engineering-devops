@@ -8,7 +8,7 @@ Script 3. Paths - Counts the number of directories in the PATH
 
 Script 4. Lists the environment variables.
 
-Script 5. Displats a list of all variables, including environment variables, and functions.
+Script 5. Displays a list of all variables, including environment variables, and functions.
 
 Script 6. Creates the variable BETTY with the value Holberton.
 
@@ -21,4 +21,6 @@ Script 9. Prints the result of the environmental variable POWER divided by DIVID
 Script 10. Displays the result of BREATH to the power of LOVE.
 
 Script 11. Converts the variable BINARY from binary to decimal.
+
+Script 12. Prints all possible combinationas of two letters except oo.
 
