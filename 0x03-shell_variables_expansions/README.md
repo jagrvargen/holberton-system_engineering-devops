@@ -16,3 +16,5 @@ Script 7. Creates the global variable HOLBERTON with the value Betty.
 
 Script 8. Prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE
 
+Script 9. Prints the result of the environmental variable POWER divided by DIVIDE followed by a new line.
+
