@@ -28,3 +28,5 @@ Script 13. Prints the variable NUM with two decimal places.
 
 Script 14. Converts the number stored in DECIMAL to base 16.
 
+Script 100. Finds all empty files and directories in the current working directory and all subdirectories.
+
