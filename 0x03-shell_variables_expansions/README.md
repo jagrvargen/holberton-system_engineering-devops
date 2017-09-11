@@ -26,3 +26,5 @@ Script 12. Prints all possible combinationas of two letters except oo.
 
 Script 13. Prints the variable NUM with two decimal places.
 
+Script 14. Converts the number stored in DECIMAL to base 16.
+
