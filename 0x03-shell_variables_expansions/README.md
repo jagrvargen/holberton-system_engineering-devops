@@ -12,3 +12,5 @@ Script 5. Displats a list of all variables, including environment variables, and
 
 Script 6. Creates the variable BETTY with the value Holberton.
 
+Script 7. Creates the global variable HOLBERTON with the value Betty.
+
