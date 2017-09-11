@@ -20,3 +20,5 @@ Script 9. Prints the result of the environmental variable POWER divided by DIVID
 
 Script 10. Displays the result of BREATH to the power of LOVE.
 
+Script 11. Converts the variable BINARY from binary to decimal.
+
