@@ -7,3 +7,5 @@
 2. 2-while_holberton_school - Write a bash script that displays 'Holberton School' ten times using while loop.
 
 3. 3-until_holberton_school - Write a bash script that displays 'Holberton School' ten times using until loop
+
+4. 4-if_9_say_hi - Write a bash script that displays 'Holberton School' ten times, but for the ninth iteration, displays 'Holberton School' and then 'Hi' on a new line.
