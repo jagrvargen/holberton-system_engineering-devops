@@ -9,3 +9,5 @@
 3. 3-until_holberton_school - Write a bash script that displays 'Holberton School' ten times using until loop
 
 4. 4-if_9_say_hi - Write a bash script that displays 'Holberton School' ten times, but for the ninth iteration, displays 'Holberton School' and then 'Hi' on a new line.
+
+5. 5-4_bad_luck_8_is_your_chance - Write a bash script that loops from one to ten and displays 'bad luck' on its fourth iteration, 'good luck' on its eighth, and 'Holberton School' on all others.
