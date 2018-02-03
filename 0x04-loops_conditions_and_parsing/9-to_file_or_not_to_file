@@ -9,8 +9,8 @@ else
 fi
 if [ -s $FILE ]
  then echo "$FILE file is not empty"
-else
- echo "$FILE is empty"
+elif [ -e $FILE ]
+ then echo "$FILE is empty"
 fi
 if [ -f $FILE ]
  then echo "$FILE is a regular file"
