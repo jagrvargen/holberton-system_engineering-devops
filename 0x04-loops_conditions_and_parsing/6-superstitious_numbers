@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# A loop that iterates from 1 to 20, displays the numbers, and displays
+# "bad luck from China" on the 4th iteration, "bad luck from Japan" on its 9th
+# iteration, and "bad luck from Italy" on its 17th iteration.
+i=0
+while [ $i -lt 20 ]
+ do
+  (( i += 1 ))
+  echo $i
+  case $i in
+   4) echo "bad luck from China";;
+   9) echo "bad luck from Japan";;
+   17) echo "bad luck from Italy";;
+  esac
+done
