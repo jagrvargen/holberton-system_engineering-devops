@@ -3,5 +3,5 @@
 PSWD=/etc/passwd
 cat < "$PSWD" | while read line
  do
- echo "$line" | cut -d ":" -f 1,3,6
+ echo "$line" | cut -d ":" -f 1,4,6
 done
