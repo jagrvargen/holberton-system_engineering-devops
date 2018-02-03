@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Parses an Apache log access file and returns the visitor IP addresses as well
+# as their corresponding HTTP status codes.
+awk '/([0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)/' apache-access.log | cut -d ' ' -f 1,9
