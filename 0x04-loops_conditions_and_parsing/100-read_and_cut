@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Reads and displays the contents of the /etc/passwd file.
+PSWD=/etc/passwd
+cat < "$PSWD" | while read line
+ do
+ echo "$line" | cut -d ":" -f 1,3,6
+done
