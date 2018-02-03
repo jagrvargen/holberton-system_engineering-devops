@@ -15,3 +15,5 @@
 6. 6-superstitious_numbers - Write a bash script that loops from one to twenty and displays the numbers, displays 'bad luck from China' on its fourth iteration, 'bad luck from Japan' on its ninth iteration, and 'bad luck from Italy' on its 17th iteration.
 
 7. 7-clock - Write a bash script that displays the time for 12 hours and 59 minutes using a while loop.
+
+8. 8-for_ls - Write a bash script with a for loop that displays the content of the current directory in a list format, where only the part of the name after the dash is displayed.
