@@ -17,3 +17,5 @@
 7. 7-clock - Write a bash script that displays the time for 12 hours and 59 minutes using a while loop.
 
 8. 8-for_ls - Write a bash script with a for loop that displays the content of the current directory in a list format, where only the part of the name after the dash is displayed.
+
+9. 9-to_file_or_not_to_file - Write a bash script that gives the information about the holbertonschool file using if and else. If the file exists display 'holbertonschool file exists'. If it does not exit display 'holbertonschool file does not exist'. If the file exists, print 'holberton school file is empty' if empty, 'holbertonschool file is not empty' if not empty, 'holbertonschool is a regular file' if it is regular, and nothing if it is not regular.
