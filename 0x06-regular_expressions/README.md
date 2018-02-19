@@ -7,3 +7,5 @@
 2. 2-repetition_token_1.rb - Find the regular expression that will match htn and hbtn, but not hbbtn or hbbbtn.
 
 3. 3-repetition_token_2.rb - Find the regular expression that will match hbtn, hbttn, hbtttn, hbttttn, but not hbn.
+
+4. 4-repetition_token_3.rb - Find the regular expression that matches hbn, hbtn, hbttn, hbtttn, hbttttn, but not hbn.
