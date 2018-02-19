@@ -5,3 +5,5 @@
 1. 1-repetition_token_0.rb - Write a regular expression that will match the tokens hbttn, hbtttn, hbttttn, hbtttttn, but not hbn, hbtn, or hbttttttn.
 
 2. 2-repetition_token_1.rb - Find the regular expression that will match htn and hbtn, but not hbbtn or hbbbtn.
+
+3. 3-repetition_token_2.rb - Find the regular expression that will match hbtn, hbttn, hbtttn, hbttttn, but not hbn.
