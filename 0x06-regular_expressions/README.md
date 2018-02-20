@@ -15,3 +15,5 @@
 6. 6-phone_number.rb - Match a ten digit regular phone number.
 
 7. 7-OMG_WHY_ARE_YOU_SHOUTING.rb - A regular expression which only matches capital letters.
+
+8. 100-textme.rb - Find the sender, receiver, and flag info from a TextMe logfile.
