@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# 301 redirects /redirect_me to https://www.youtube.com/watch?v=QH2-TGUlwu4
+# 301 redirects /redirect_me to custom page
 apt-get -y update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Configure Nginx server to have a custom 404 page
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+
+string="Ceci n'est pas une page"
+
+mkdir /usr/share/nginx/html/custom_404.html
+chmod -R 755 /usr/share/nginx/html/404.html
+
+echo $string > /usr/share/nginx/html/404.html
+
+sed -i ""
