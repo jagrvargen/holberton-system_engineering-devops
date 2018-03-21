@@ -9,7 +9,7 @@ string="Ceci n'est pas une page"
 touch /usr/share/nginx/html/custom_404.html
 chmod -R 755 /usr/share/nginx/html/404.html
 
-echo $string > /usr/share/nginx/html/404.html
+echo "$string" > /usr/share/nginx/html/404.html
 
 sed -i "s/#error_page/error_page/" /etc/nginx/sites-available/default
 
