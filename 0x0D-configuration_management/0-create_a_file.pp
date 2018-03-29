@@ -1,3 +1,4 @@
+# Creates a file holberton in the /tmp directory and sets permissions.
 file { '/tmp/holberton':
   ensure  => file,
   path    => '/tmp/holberton',
