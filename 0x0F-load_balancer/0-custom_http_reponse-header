@@ -2,9 +2,13 @@
 # Update server and install Nginx web server.
 apt-get -y update
 apt-get -y install nginx
+echo "Holberton School" > /usr/share/nginx/html/index.html
 
 # Retrieve host name and cut.
 host=$(hostname | cut -c 5-)
 
 # Add location block to server block which creates an HTTP response header.
 sed -i "26iadd_header X-Served-By $host;\n" /etc/nginx/sites-enabled/default
+
+# Restart
+service nginx restart
