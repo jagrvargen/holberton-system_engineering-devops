@@ -7,4 +7,4 @@ apt-get -y install nginx
 host=$(hostname | cut -c 5-)
 
 # Add location block to server block which creates an HTTP response header.
-sed -i "26ilocation {\n\t\tadd_header X-Served-By $host; \n\t}" /etc/nginx/sites-enabled/default
+sed -i "26iadd_header X-Served-By $host;\n" /etc/nginx/sites-enabled/default
