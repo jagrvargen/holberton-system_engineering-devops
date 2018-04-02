@@ -27,4 +27,5 @@ echo -e "\tmode http" >> $proxy_config
 echo -e "\tdefault_backend web-backend" >> $proxy_config
 
 # Restart
-service haproxy restart
+service haproxy start
+service nginx start
