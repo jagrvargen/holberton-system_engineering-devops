@@ -12,7 +12,4 @@ sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 pkill apache
 
 # Restart
-service nginx restart
-
-# Change user to nginx
-su - nginx
+sudo -u nginx service nginx restart
