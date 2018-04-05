@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Reconfigures server to run processes as user nginx listening on port 8080.
+chmod -R 755 /etc/nginx/nginx.conf
+
+# Edit the user in the nginx configuration file to be nginx.
+sed -i '4iuser nginx;' /etc/nginx/nginx.conf
+
+# Configure server block to listen on port 8080
+sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
+
+# Kill the Apache process which is currently occupying port 8080.
+pkill apache
+
+# Restart
+sudo -u nginx service nginx restart
