@@ -1,3 +1,4 @@
 sudo ufw allow 8080
 sudo sed -i '10i*nat\n:PREROUTING ACCEPT [0:0]\n-A PREROUTING -p tcp --dport 8080 ij REDIRECT --to-port 80\nCOMMIT'
 sudo ufw reload
+sudo ufw enable
