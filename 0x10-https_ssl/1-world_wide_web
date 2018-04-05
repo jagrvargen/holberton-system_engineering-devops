@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# This script retrieves DNS information for (sub)domains passed as arguments.
+
+# Retrieve domain names and grep the answer section from dig output into a
+# temp file.
+touch temp.txt
+
+# Create an array with subdomain names
+declare -a SUBS=("www" "lb-01" "web-01" "web-02")
+
+# Store answer section from dig in temp file
+if [ -z "$2" ]; then
+    for i in "${SUBS[@]}"; do
+	dig "$i.$1" | grep -A1 'ANSWER SECTION:' >> temp.txt
+done
+else
+    dig "$2.$1" | grep -A1 'ANSWER SECTION:' >> temp.txt
+fi
+
+# Print a custom message
+sed -ri "s/\.+[a-z]+\.+[a-z]+\.+//g" temp.txt
+awk '/ANSWER SECTION:/{getline; printf("The subdomain %s is a %s record and points to %s\n",$1,$4,$5)}' temp.txt
+
+rm temp.txt
