@@ -13,3 +13,6 @@ pkill apache
 
 # Restart
 service nginx restart
+
+# Change user to nginx
+su - nginx
