@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # Reconfigures server to run processes as user nginx listening on port 8080.
 chmod -R 755 /etc/nginx/nginx.conf
-sed -i '4iuser nginx;' /etc/nginx/nginx.conf
 awk '{gsub(/(#user www-data)+/,"user nginx")}' /etc/nginx/nginx.conf
 sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 pkill apache
