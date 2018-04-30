@@ -27,7 +27,6 @@ if __name__ == "__main__":
         task_list[i].append(JSON[i]["title"])
         ",".join(task_list[i])
 
-    print(task_list)
     with open("{}.csv".format(id), "w") as csv_file:
         writer = csv.writer(csv_file)
         for item in task_list:
