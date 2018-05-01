@@ -14,7 +14,7 @@ if __name__ == "__main__":
     req_name = requests.get(url)
     req_todos = requests.get(url + "/todos")
 
-    name = req_name.json()["name"]
+    name = req_name.json().get("name")
     JSON = req_todos.json()
     total_tasks = len(JSON)
     done_tasks = 0
@@ -28,4 +28,4 @@ if __name__ == "__main__":
                                                          total_tasks))
     for task in JSON:
         if task["completed"] == True:
-            print("\t{}".format(task["title"]))
+            print("\t{}".format(task.get("title")))
