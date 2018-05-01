@@ -25,7 +25,7 @@ if __name__ == "__main__":
                 done_tasks += 1
 
     print("Employee {} is done with tasks({}/{}):".format(name, done_tasks,
-                                                         total_tasks))
+                                                          total_tasks))
     for task in JSON:
-        if task["completed"] == True:
+        if task["completed"] is True:
             print("\t{}".format(task.get("title")))
