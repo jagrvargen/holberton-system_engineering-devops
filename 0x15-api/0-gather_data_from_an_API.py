@@ -28,4 +28,4 @@ if __name__ == "__main__":
                                                           total_tasks))
     for task in JSON:
         if task.get("completed") is True:
-            print("\t{}".format(task.get("title")))
+            print("\t {}".format(task.get("title")))
