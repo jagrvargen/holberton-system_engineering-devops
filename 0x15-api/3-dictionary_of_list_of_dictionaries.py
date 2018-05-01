@@ -20,7 +20,7 @@ if __name__ == "__main__":
         name = req_name.json().get("username")
 
         JSON = req_todos.json()
-        print(JSON)
+
         json_list = [[] for x in range(len(JSON))]
 
         for i in range(len(JSON)):
