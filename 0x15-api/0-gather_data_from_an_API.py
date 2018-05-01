@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     for dic in JSON:
         for key, value in dic.items():
-            if key == "completed" and value == True:
+            if key == "completed" and value is True:
                 done_tasks += 1
 
     print("Employee {} is done with tasks({}/{}):".format(name, done_tasks,
