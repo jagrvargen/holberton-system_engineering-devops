@@ -12,7 +12,7 @@ subreddit = argv[1]
 
 def top_ten(subreddit):
 
-    url = "https://www.reddit.com/r/{}/top.json?limit=10".format(subreddit)
+    url = "https://www.reddit.com/r/{}/hot.json?limit=10".format(subreddit)
     user_agent = {"User-Agent": "JDawg 1.0"}
 
     req = requests.get(url, headers=user_agent)
