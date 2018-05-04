@@ -17,6 +17,9 @@ def number_of_subscribers(subreddit):
     req = requests.get(query_string, headers=user_agent)
     JSON = req.json()
 
+    if "message" in JSON and JSON["message"] == "Not Found":
+        return 0
+
     total_subscribers = JSON["data"]["subscribers"]
 
     return total_subscribers
