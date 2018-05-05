@@ -22,7 +22,8 @@ def top_ten(subreddit):
             exit
 
     JSON = req.json()
-    if not JSON["data"]["children"]:
+    if not JSON["data"]["children"] or "message" in JSON and JSON["message"]\
+       == "Not Found":
         print("None")
         exit
 
