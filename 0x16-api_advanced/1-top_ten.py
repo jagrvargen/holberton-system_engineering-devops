@@ -13,10 +13,9 @@ def top_ten(subreddit):
 
     req = requests.get(url, headers=user_agent)
 
-    for item in req.history:
-        if "301" in item:
-            print("None")
-            return None
+    if req.status_code == 301:
+        print("None")
+        return None
 
     JSON = req.json()
     if "children" in JSON["data"] and JSON["data"]["children"] is None or\
