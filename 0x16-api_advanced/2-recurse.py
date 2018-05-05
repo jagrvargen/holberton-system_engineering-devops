@@ -20,12 +20,12 @@ def recurse(subreddit, hot_list=[], after=""):
         return hot_list
 
     req = requests.get(url, headers=user_agent)
+    if req.status_code != 200:
+        return None
     JSON = req.json()
 
     try:
         children_list = JSON["data"]["children"]
-        if len(children_list) == 0:
-            return None
     except:
         return None
 
