@@ -4,10 +4,6 @@
    top 10 posts for a given subreddit.
 """
 import requests
-from sys import argv
-
-
-subreddit = argv[1]
 
 
 def top_ten(subreddit):
