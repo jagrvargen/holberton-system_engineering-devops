@@ -4,10 +4,6 @@
    the total number of subscribers for a given subreddit.
 """
 import requests
-from sys import argv
-
-
-subreddit = argv[1]
 
 
 def number_of_subscribers(subreddit):
