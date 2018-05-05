@@ -23,7 +23,10 @@ def recurse(subreddit, hot_list=[], after=""):
 
     req = requests.get(url, headers=user_agent)
     JSON = req.json()
-    for item in JSON["data"]["children"]:
-        hot_list.append(item["data"]["title"])
+    try:
+        for item in JSON["data"]["children"]:
+            hot_list.append(item["data"]["title"])
+    except:
+        return None
 
     return recurse(subreddit, hot_list, JSON["data"]["after"])
