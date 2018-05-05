@@ -15,6 +15,8 @@ def number_of_subscribers(subreddit):
 
     if "message" in JSON and JSON["message"] == "Not Found":
         return 0
+    elif "children" in JSON["data"] and JSON["data"]["children"] is None:
+        return 0
 
     total_subscribers = JSON["data"]["subscribers"]
 
