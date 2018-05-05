@@ -18,12 +18,12 @@ def top_ten(subreddit):
         return None
 
     JSON = req.json()
-    if "children" in JSON["data"] and JSON["data"]["children"] is None or\
-       "children" not in JSON["data"]:
+
+    try:
+        for item in JSON["data"]["children"]:
+            for key, value in item["data"].items():
+                if key == "title":
+                    print(value)
+    except:
         print("None")
         return None
-
-    for item in JSON["data"]["children"]:
-        for key, value in item["data"].items():
-            if key == "title":
-                print(value)
