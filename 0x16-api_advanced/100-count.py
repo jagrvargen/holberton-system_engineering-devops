@@ -21,7 +21,10 @@ def count_words(subreddit, word_list, after="", word_dict={}):
     else:
         for key in word_dict.keys():
             if word_dict[key] > 0:
-                print("{}: {}".format(key, word_dict[key]))
+                temp_list.append(key)
+        temp_list.sort()
+        for item in temp_list:
+                print("{}: {}".format(word_dict[item], item))
         return
 
     req = requests.get(url, headers=user_agent)
