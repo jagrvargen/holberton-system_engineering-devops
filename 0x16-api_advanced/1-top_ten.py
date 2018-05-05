@@ -18,10 +18,10 @@ def top_ten(subreddit):
             exit
 
     JSON = req.json()
-    if not JSON["data"]["children"] or "message" in JSON and JSON["message"]\
-       == "Not Found":
+    if "children" in JSON["data"] and JSON["data"]["children"] is None or\
+       "message" in JSON and JSON["message"] == "Not Found":
         print("None")
-        exit
+        return None
 
     for item in JSON["data"]["children"]:
         for key, value in item["data"].items():
