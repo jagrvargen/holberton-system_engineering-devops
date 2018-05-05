@@ -20,7 +20,11 @@ def recurse(subreddit, hot_list=[], after=""):
 
     req = requests.get(url, headers=user_agent)
     JSON = req.json()
-    children_list = JSON["data"]["children"]
+
+    try:
+        children_list = JSON["data"]["children"]
+    except:
+        return None
 
     hot_list = hot_list + helper(children_list, 0, temp_list)
 
