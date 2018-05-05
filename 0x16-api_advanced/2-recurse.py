@@ -20,8 +20,6 @@ def recurse(subreddit, hot_list=[], after=""):
         return hot_list
 
     req = requests.get(url, headers=user_agent)
-    if req.status_code != 200:
-        return None
     JSON = req.json()
 
     try:
