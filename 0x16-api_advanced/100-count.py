@@ -41,6 +41,7 @@ def count_words(subreddit, word_list, after="", word_dict={}):
 
     return count_words(subreddit, word_list, JSON["data"]["after"], word_dict)
 
+
 def helper(children_list, pos, temp_list):
 
     if pos >= len(children_list):
