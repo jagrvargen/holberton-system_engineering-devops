@@ -16,6 +16,7 @@ def recurse(subreddit, hot_list=[], after=""):
     if after is not None:
         url = url + "&after={}".format(after)
     else:
+        print(hot_list)
         return hot_list
 
     req = requests.get(url, headers=user_agent)
@@ -23,6 +24,8 @@ def recurse(subreddit, hot_list=[], after=""):
 
     try:
         children_list = JSON["data"]["children"]
+        if len(children_list) == 0:
+            return None
     except:
         return None
 
