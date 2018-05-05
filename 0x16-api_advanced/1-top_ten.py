@@ -19,7 +19,7 @@ def top_ten(subreddit):
 
     JSON = req.json()
     if "children" in JSON["data"] and JSON["data"]["children"] is None or\
-       "message" in JSON and JSON["message"] == "Not Found":
+       "children" not in JSON["data"]:
         print("None")
         return None
 
