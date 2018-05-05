@@ -5,16 +5,13 @@
    titles.
 """
 import requests
-from sys import argv
-
-
-subreddit = argv[1]
 
 
 def recurse(subreddit, hot_list=[], after=""):
 
     url = "https://www.reddit.com/r/{}/hot.json?limit=100".format(subreddit)
     user_agent = {"User-Agent": "JDawg 1.0"}
+    temp_list = []
 
     if after is not None:
         url = url + "&after={}".format(after)
@@ -23,18 +20,16 @@ def recurse(subreddit, hot_list=[], after=""):
 
     req = requests.get(url, headers=user_agent)
     JSON = req.json()
+    children_list = JSON["data"]["children"]
 
-    hot_list = hot_list + helper(JSON)
+    hot_list = hot_list + helper(children_list, 0, temp_list)
 
     return recurse(subreddit, hot_list, JSON["data"]["after"])
 
-def helper(JSON):
-    temp_list = []
+def helper(children_list, pos, temp_list):
 
-    try:
-        for item in JSON["data"]["children"]:
-            temp_list.append(item["data"]["title"])
-    except:
-        return None
+    if pos >= len(children_list):
+        return temp_list
 
-    return temp_list
+    temp_list.append(children_list[pos]["data"]["title"])
+    return helper(children_list, pos + 1, temp_list)
