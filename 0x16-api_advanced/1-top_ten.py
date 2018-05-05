@@ -12,10 +12,11 @@ def top_ten(subreddit):
     user_agent = {"User-Agent": "JDawg 1.0"}
 
     req = requests.get(url, headers=user_agent)
+
     for item in req.history:
         if "301" in item:
             print("None")
-            exit
+            return None
 
     JSON = req.json()
     if "children" in JSON["data"] and JSON["data"]["children"] is None or\
