@@ -3,8 +3,6 @@ exec { '/bin/mv /var/www/html/wp-includes/class-wp-locale.php /var/www/html/wp-i
   creates => '/var/www/html/wp-includes/class-wp-locale.phpp',
 }
 
-->
-
-file {  '/var/www/html/wp-includes/class-wp-locale.php':
+-> file {  '/var/www/html/wp-includes/class-wp-locale.php':
   ensure => absent,
 }
