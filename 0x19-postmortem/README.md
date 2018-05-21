@@ -1,6 +1,6 @@
 # POSTMORTEM
 ### Summary
-On 5-1-18, from 04:03 to 13:30 PST, of yet unknown bad actors accessed and downloaded multiple gigabytes of sensitive user information including social security numbers, credit scores, and home addresses before the SRE team was successfully able to isolate and contain the breach. Due to an vulnerability in the Apache Struts 2 web application software, hackers were able to manipulate HTTP headers to issue commands within our servers. Handling the issue required a systemwide shutdown which led to 8.5 hours of network downtime.
+On 5-1-18, from 04:03 to 13:30 PST, as of yet unknown bad actors accessed and downloaded multiple gigabytes of sensitive user information including social security numbers, credit scores, and home addresses before the SRE team was successfully able to isolate and contain the breach. Due to an vulnerability in the Apache Struts 2 web application software, hackers were able to manipulate HTTP headers to issue commands within our servers. Handling the issue required a systemwide shutdown which led to 8.5 hours of network downtime.
 
 ### Timeline
 - 04:03 - Our monitoring service sent out an alert to the security team that an abnormal spike in traffic was taking place and required immediate attention.
