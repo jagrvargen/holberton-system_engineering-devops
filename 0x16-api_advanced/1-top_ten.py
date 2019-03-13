@@ -24,6 +24,7 @@ def top_ten(subreddit):
             for key, value in item["data"].items():
                 if key == "title":
                     print(value)
+                    print('test')
     except:
         print("None")
         return None
