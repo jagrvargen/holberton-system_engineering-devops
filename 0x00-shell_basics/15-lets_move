@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "testing"
+mv [[:upper:]]* /tmp/u
