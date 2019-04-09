@@ -13,12 +13,12 @@ exec { 'nginx begins':
 file { 'alter default index.html page':
   path => '/usr/share/nginx/html/index.html',
   ensure => present,
-  content => 'Hello Holberton',
+  content => 'Holberton School',
 }->
 file { 'alter /var/www/html':
   path => '/var/www/html/index.nginx-debian.html',
   ensure => present,
-  content => 'Hello Holberton',
+  content => 'Holberton School',
 }->
 file_line { 'redirect':
   path => '/etc/nginx/sites-enabled/default',
