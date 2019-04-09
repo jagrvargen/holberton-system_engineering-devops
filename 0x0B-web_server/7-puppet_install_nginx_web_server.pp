@@ -15,11 +15,6 @@ file { 'alter default index.html page':
   ensure => present,
   content => 'Holberton School',
 }->
-file { 'alter /var/www/html':
-  path => '/var/www/html/index.nginx-debian.html',
-  ensure => present,
-  content => 'Holberton School',
-}->
 file_line { 'redirect':
   path => '/etc/nginx/sites-enabled/default',
   line => "server { \nlocation /redirect_me { \n return 301 /; \n }",
@@ -28,3 +23,9 @@ file_line { 'redirect':
 exec { 'restart Nginx':
   command => '/etc/init.d/nginx restart',
 }
+
+#file { 'alter /var/www/html':
+#  path => '/var/www/html/index.nginx-debian.html',
+#  ensure => present,
+#  content => 'Holberton School',
+#}->
