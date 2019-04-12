@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 # Reconfigures the sites-enabled server block to listen on port 80.
-sed -i 's/8080/80/' /etc/nginx/sites-enabled/default
 wget https://github.com/jagrvargen/holberton-system_engineering-devops/blob/master/0x0E-web_stack_debugging_1/0-nginx_likes_port_80
 service nginx reload
 service nginx restart
-service nginx stop
