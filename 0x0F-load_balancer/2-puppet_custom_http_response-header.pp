@@ -16,4 +16,7 @@ file_line { 'add custom header':
   path     => '/etc/nginx/sites-enabled/default',
   line     => "server { \n        add_header X-Served-By \$hostname; \n ",
   match    => "^server {",
+}->
+exec { 'restart':
+  command  => '/etc/init.d/nginx restart',
 }
