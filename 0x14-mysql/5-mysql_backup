@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script will generate a MySQL dump of all databases and create a
+# compressed archive of them.
+
+mysqldump -uroot -p "$1" --opt --databases > backup.sql
+
+# Compress file to tar named by today's date.
+tar -zcvf "$(date +%d-%m-%y)".tar.gz backup.sql
