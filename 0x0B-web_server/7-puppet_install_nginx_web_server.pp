@@ -4,9 +4,16 @@ package { 'install nginx':
   name   => 'nginx',
   ensure => 'present',
 }->
-file { 'add Holberton School to index.html':
+file_line { 'change root directory':
+  path => '/etc/nginx/sites-available/default',
+  line => "\troot /usr/share/nginx/html;",
+  match => "root /var/www/html;",
+}->
+file_line { 'add Holberton School to index.html':
   path => '/usr/share/nginx/html/index.html',
-  content => 'Hello Holberton',
+  ensure => present,
+  match => "^*.$",
+  line => 'Hello Holberton',
 }->
 file_line { 'Add 301 redirect':
   path  => '/etc/nginx/sites-available/default',
@@ -14,5 +21,5 @@ file_line { 'Add 301 redirect':
   line => "server {\n\tlocation /redirect_me {\n\t\trewrite ^/.*$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}\n",
 }->
 exec{ 'restart nginx':
-  command => '/bin/systemctl restart nginx',
+  command => '/usr/sbin/service nginx restart',
 }
