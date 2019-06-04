@@ -4,9 +4,9 @@ package { 'install nginx':
   name   => 'nginx',
   ensure => 'present',
 }->
-file_line { 'add Holberton School to index.html':
+file { 'add Holberton School to index.html':
   path => '/usr/share/nginx/html/index.html',
-  line => 'Hello Holberton',
+  content => 'Hello Holberton',
 }->
 file_line { 'Add 301 redirect':
   path  => '/etc/nginx/sites-available/default',
