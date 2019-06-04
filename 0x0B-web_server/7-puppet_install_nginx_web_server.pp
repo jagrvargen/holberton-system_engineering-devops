@@ -14,5 +14,5 @@ file_line { 'Add 301 redirect':
   line => "server {\n\tlocation /redirect_me {\n\t\trewrite ^/.*$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}\n",
 }->
 exec{ 'restart nginx':
-  command => 'systemctl nginx restart',
+  command => 'systemctl restart nginx',
 }
