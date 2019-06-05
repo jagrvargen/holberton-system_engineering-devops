@@ -9,11 +9,11 @@ file_line { 'change root directory':
   line => "\troot /usr/share/nginx/html;",
   match => "root /var/www/html;",
 }->
-file_line { 'add Holberton School to index.html':
+file { 'add Holberton School to index.html':
   path => '/usr/share/nginx/html/index.html',
   ensure => present,
-  match => "^*.$",
-  line => 'Hello Holberton',
+  replace => true,
+  content => 'Hello Holberton',
 }->
 file_line { 'Add 301 redirect':
   path  => '/etc/nginx/sites-available/default',
