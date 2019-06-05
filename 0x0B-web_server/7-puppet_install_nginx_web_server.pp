@@ -13,7 +13,7 @@ file { 'add Holberton School to index.html':
   path => '/usr/share/nginx/html/index.html',
   ensure => present,
   replace => true,
-  content => 'Hello Holberton',
+  content => 'Holberton School',
 }->
 file_line { 'Add 301 redirect':
   path  => '/etc/nginx/sites-available/default',
