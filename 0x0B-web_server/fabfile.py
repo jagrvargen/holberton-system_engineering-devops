@@ -14,7 +14,7 @@ def pack(c):
 @task
 def deploy(c):
     """Upload the archive to the remote server in the /tmp/ directory."""
-    c.user = "ubuntu"
+    c.user = "correction"
     c.put("holbertonwebapp.tar.gz", "/tmp")
     c.run("mkdir /tmp/holbertonwebapp")
     c.run("tar -C /tmp/holbertonwebapp -xzvf /tmp/holbertonwebapp.tar.gz")
