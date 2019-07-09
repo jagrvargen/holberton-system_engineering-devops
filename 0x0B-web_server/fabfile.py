@@ -23,4 +23,4 @@ def deploy(c):
 @task
 def clean(c):
     """Deletes holbertonwebapp.tar.gz on the local machine."""
-c.run("rm holbertonwebapp.tar.gz")
+    c.run("rm holbertonwebapp.tar.gz")
